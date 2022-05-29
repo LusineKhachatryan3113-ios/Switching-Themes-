@@ -31,7 +31,8 @@ struct ContentView: View {
                     .foregroundColor(Color(dataSource.selectedTheme.labelColor))
                     .padding()
             }
-            .buttonStyle(FilledRoundedCornerButtonStyle(bgColor: Color(dataSource.selectedTheme.primaryColor), fgColor: Color(dataSource.selectedTheme.secondaryColor))
+            .buttonStyle(FilledRoundedCornerButtonStyle(bgColor: Color(dataSource.selectedTheme.primaryColor), 
+                                                        fgColor: Color(dataSource.selectedTheme.secondaryColor))
             )
             .navigationTitle("Theme Change")
         }
@@ -40,7 +41,8 @@ struct ContentView: View {
             ModalSheetView()
             
         }
-        .appearanceModifier(backgroundColor: dataSource.selectedTheme.primaryColor,  textColor: dataSource.selectedTheme.secondaryColor)
+        .appearanceModifier(backgroundColor: dataSource.selectedTheme.primaryColor,  
+                            textColor: dataSource.selectedTheme.secondaryColor)
     }
 }
 
